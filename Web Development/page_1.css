@@ -1,0 +1,28 @@
+#First{text-align: center;
+color: rgb(61, 18, 18);
+size: 8cm;}
+
+mark{
+    background-color: #0e1718;
+    color: #ffffff;
+  }
+
+div{color: rgb(11, 62, 24);}
+
+img{border: 1px solid #171616;
+padding: 2%;}
+
+aside{border: 2px solid rgb(82, 107, 24);
+    width: 300px;
+    height: 30px;}
+
+h1{font-style: italic;}
+
+body{background-color: rgba(184, 44, 72, 0.822);}
+
+footer.change{font-style: italic;
+font-family: fantasy;}
+
+.change{font-size: 18px;}
+
+a{color: rgba(255, 255, 0, 0.632);}

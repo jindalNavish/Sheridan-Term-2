@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week10_radio</title>
+</head>
+<body>
+    <form name="myForm" action="" method="get" onsubmit="return checkScript()">
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <span id="msg"></span><br><br>
+        <input type="submit" value="Sumbit">
+    </form>
+
+    <script>
+        function checkScript(){
+
+            var i, user_input;
+            var radiobuttons = document.myForm.gender;
+            for (i=0; i<radiobuttons.length; i++){
+
+                if(radiobuttons[i].checked){
+
+                    user_input = radiobuttons[i].value;
+                    break;
+                }
+            }
+
+            if(user_input === undefined){
+
+                document.getElementById('msg').innerHTML = "This field is required";
+                return false;
+            }
+            else{
+                return true;
+            }
+
+        }
+    </script>
+</body>
+</html>

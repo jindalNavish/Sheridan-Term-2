@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester Page</title>
+</head>
+<body>
+
+    <h1>Semester Details</h1>
+
+    <ul>
+        <li> <a href="homepage" target="_blank" rel="noopener">View Homepage</a></li>
+        <li> <a href="grocery" target="_blank" rel="noopener">View Grocery Details</a></li>
+        <li> <a href="expenses" target="_blank" rel="noopener">View Expenses Details</a></li>
+     </ul>
+
+     <h3>Semesters</h3>
+
+     <table border="line">
+
+        <tr>
+            <th>Course Name</th>
+            <th>Semester</th>
+            <th>Duration</th>
+        </tr>
+
+        <% for(let i=0; i < semester.length; i++){%>
+
+            <tr>
+                <td><%= semester[i].CourseName %></td>
+                <td><%= semester[i].Semester %></td>
+                <td><%= semester[i].Duration %></td>
+            </tr>
+            <% } %>
+        </table>
+
+        <h4>Semester Details</h4>
+
+
+</body>
+</html>

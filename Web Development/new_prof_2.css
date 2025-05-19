@@ -1,0 +1,148 @@
+p{background-color: rgba(134, 125, 87, 0.363);}
+
+ul{
+    
+    list-style-position: inside;
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1017781/catsit_darkCyan2.png);
+  }
+  
+  
+  
+ol{
+    list-style-type: upper-roman;
+  }
+
+  .flex-box {
+    border: 0.5em solid grey;
+    padding: 1%;
+  }
+  
+  .flex-box > div {
+    border: 0.2em solid green;
+    margin: 0.2%;
+    padding: 0.5%;
+  }
+  
+  blockquote{
+    background-color: aquamarine;
+    float: right;
+    width: 30%;
+    margin: 0%;
+    border-top: 0.3em solid blue;
+    border-bottom: 0.3em solid blue;
+    padding: 1.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 130%;
+  }
+
+.outcontainer{
+background-color: bisque;
+display: flex;
+/*allow to maniuplate elements in container*/
+border: 5px solid black;
+flex-direction: row;
+/*row for left row reverse for right*/
+justify-content: flex-start;
+/*start for left end for right*/
+align-content: center;
+align-items: center;
+column-gap: 1em;
+row-gap: 4em;
+flex-wrap: wrap;
+border-radius: 20px;
+}
+
+.innercontainer1{
+  outline: 0.2em solid black;
+  border-radius: 20px;
+  background-color: violet;
+  width: 10em;
+  height: 10em;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  font: 4em;
+  order: 1;}
+
+ 
+.innercontainer2{padding: 2px;
+        outline: 0.2em solid black;
+        border-radius: 20px;
+        background-color: indigo;
+        width: 10em;
+        height: 10em;
+        align-self: center;
+        text-align: center;
+        align-content: center;
+      order: 2;}
+
+        .innercontainer3{
+          padding: 2px;
+          outline: 0.2em solid black;
+        border-radius: 20px;
+          background-color: blue;
+          width: 10em;
+          align-self: center;
+          text-align: center;
+          align-content: center;
+          height: 10em;
+        order: 3;}
+
+          .innercontainer4{
+            padding: 2px;
+            outline: 0.2em solid black;
+            border-radius: 20px;
+            background-color: green;
+            width: 10em;
+            height: 10em;
+          text-align: center;
+        align-self: center;
+        align-content: center;
+      order: 4;}
+
+            .innercontainer5{
+              padding: 2px;
+              outline: 0.2em solid black;
+              border-radius: 20px;
+              text-align: center;
+              align-self: center;
+              align-content: center;
+              background-color: yellow;
+              width: 10em;
+              height: 10em;
+            order: 5;}
+
+              .innercontainer6{
+                padding: 2px;
+                outline: 0.2em black solid;
+                border-radius: 20px;
+                text-align: center;
+                align-self: center;
+                align-content: center;
+                order: 6;
+                background-color: orange;
+                width: 10em;
+                height: 10em;}
+
+                .innercontainer7{
+                  padding: 2px;
+                  outline: 0.2em black solid;
+                  border-radius: 20px;
+                  background-color: red;
+                  width: 10em;
+                  height: 10em;
+                text-align: center;
+              align-self: center;
+              align-content: center;
+            order: 7;}
+
+.grid{
+  display: grid;
+  grid-template-columns: 40% 40% 1fr;
+}
+
+.griditem1{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}

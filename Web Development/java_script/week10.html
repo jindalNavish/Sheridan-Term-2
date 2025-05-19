@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week10</title>
+</head>
+
+<body>
+    <form action="" method="get" onsubmit="return checkscript()">
+        <label>Name: <input type="text" id="txtName" </label>
+            <span id="msg"></span><br><br>
+            <input type="submit" value="submit">
+    </form>
+    <br><br>
+    <form action="" method="get" onsubmit="return check2()">
+        <select id="selectCars">
+            <option value="-1">Select a car</option>
+            <option value="Honda">Honda</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Mazda">Mazda</option>
+        </select>
+        <span id="msg2"></span><br><br>
+        <input type="submit" value="submit">
+    </form>
+    </form><br><br>
+
+    <form action="" method="get" onsubmit="return check3()">
+        <input type="checkbox" id="chkLaptop" value="Laptop"> Laptop <br>
+        <span id="msg3"></span><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <br><br>
+
+
+    <script>
+
+        function checkscript() {
+            var name = document.getElementById('txtName').value;
+            var msg = document.getElementById('msg');
+
+            if (name == "") {
+                msg.innerHTML = "This field is required";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function check2() {
+            var index = document.getElementById('selectCars').selectedIndex;
+            var msg2 = document.getElementById('msg2');
+
+            if (index === 0) {
+                msg2.innerHTML = "This field is required";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+
+
+        function check3() {
+            var laptop;
+            var msg3 = document.getElementById('msg3');
+
+
+            if (document.getElementById('chkLaptop').checked) {
+                laptop = document.getElementById('chkLaptop').value;
+            }
+
+            if (laptop === undefined) {
+                msg3.innerHTML = "This field is required";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../../../Python Sheridan Term1"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../tele"
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true,
+		"liveServer.settings.multiRootWorkspaceName": "tele",
+		"liveServer.settings.port": 5501
+	}
+}

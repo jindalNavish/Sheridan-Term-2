@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        .highlight{
+            color:aqua ;
+        }
+        .bordered{
+            border: 2px solid red;
+            padding: 10px;;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is my first paragraph</p>
+    <p class="text">This is second paragraph</p>
+    <div id="myDiv">This is my div element</div>
+    <script>
+        var firstPara = document.querySelector('p');
+        firstPara.style.color = 'blue';
+
+        var secondPara = document.querySelector('.text');
+        secondPara.style.color = 'green';
+
+        var myDiv = document.querySelector('#myDiv');
+        myDiv.style.color = 'orange';
+        myDiv.classList.add('highlight');
+        myDiv.classList.remove('highlight');
+
+    </script>
+</body>
+</html>

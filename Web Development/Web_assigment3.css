@@ -1,0 +1,150 @@
+body {display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(255, 168, 139, 0.664);
+}
+
+/*STyling the header*/
+
+#pfp {
+  width: 288px;
+  border: 0.1em;
+  border-radius: 144px;
+  margin-right: 3%;
+  display: flex;
+}
+
+header {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+em {
+  font-size: 5em;
+  margin-bottom: 0%;
+  padding-right: 8%;
+  font-weight: bolder;
+}
+
+
+
+#introduction {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#navigate {
+  display: flex;
+  flex-wrap: nowrap;
+  float: left;
+  padding-right: 5%;
+}
+
+/*STyling using combinators*/
+
+#navigate ul {
+  flex-wrap: wrap;
+  background-color: rgb(255, 156, 89);
+  margin: 0%;
+  padding-right: 5%;
+  padding-top: 4%;
+  display: block;
+}
+
+#navigate li {
+  color: rgb(159, 88, 60);
+  margin-bottom: 40%;
+}
+
+#navigate li:hover {
+  color: black;
+}
+
+li a {
+  color: rgb(75, 73, 73);
+  font-size: 1.2em;
+}
+
+li a:hover {
+  color: red;
+}
+
+#introduction + .first_div {
+  font-size: 1em;
+  margin: 0%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  margin-left: 45%;
+}
+
+.first_div li {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.professional{font-family: Arial, Helvetica, sans-serif;
+padding-top: 1%;
+font-weight: 500;
+font-size: 1.1em;}
+
+/*Styling main paragraph*/
+
+#skills , #experience{
+  padding-top: 2%;
+  display: flex;
+  align-content: center;
+  padding-left: 2%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+flex-wrap: wrap;}
+
+#skills > div{font-size: 2.5em;
+padding-bottom: 2%;}
+
+#skills1{float: left;
+padding-right: 100px;
+padding-top: 60px;}
+
+#skills2{float: right;
+padding-left: 100px;
+padding-top: 60px;}
+
+
+#first,#third{float: left;
+font-size: 0.8em;
+padding-bottom: 10px;}
+  
+#second,#fourth{float: left;
+font-size: 0.8em;
+padding-bottom: 10px ;}
+
+/*Styling footer*/
+#linked {
+  padding: 0.8%;
+  width: 2.2em;
+}
+#insta {
+  width: 4em;
+}
+
+
+
+/*Responsive Design*/
+@media(max-width: 698px){
+  em {font-size: 70px;
+  flex-shrink:1;
+justify-content: center;
+float: left;}}
+
+@media(max-width: 698px){
+  #introduction {font-size: 30px;
+  flex-shrink:1;
+float: left;
+justify-content: center;}}
+

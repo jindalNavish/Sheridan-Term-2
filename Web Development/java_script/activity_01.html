@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="begin">Hello, World!</p>
+    <p class="text">This is the First</p>
+    <p class="text">This is the First</p>
+    <p class="other">This is the First</p>
+    <div id="mydiv">This is a div element</div>
+    
+    <script>
+        /*var userColor = prompt("Enter your favourite colour");
+        var k = document.getElementById("begin");
+        k.style.color = userColor;
+        var elements = document.getElementsByClassName('text');
+        for (var i = 0; i < elements.length; i++){
+            elements[i].style.color = 'blue';
+        }*/
+
+
+        var firstPara = document.querySelector('p');
+        firstPara.style.color = 'blue';
+
+        var secondPara = document.querySelector('.text');
+        secondPara.style.color = 'green'
+
+        var thirdPara = document.querySelector('#mydiv');
+        thirdPara.style.color = 'orange'
+    </script>
+</body>
+</html>

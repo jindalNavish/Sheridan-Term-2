@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week9</title>
+</head>
+<body>
+    <script>
+        const add = (a,b) => {
+            return a + b;
+        }
+        console.log(add(2,3));
+
+        const calculateTotalCost = (price, taxRate) => {
+            let tax = price * taxRate;
+            return price + tax;
+            };
+            let itemPrice = 100;
+            let taxRate = 0.13;
+            let totalCost = calculateTotalCost(itemPrice, taxRate);
+            document.write("Total cost including tax: $" + totalCost);
+
+            var anony = function(){
+                return "Welcome to our website!";
+             }
+
+             document.write(anony());
+
+             const arrow = () => {
+                return "Thank you for visiting!";
+            };
+            document.write("<br>");
+            document.write(arrow());
+            
+    </script>
+</body>
+</html>

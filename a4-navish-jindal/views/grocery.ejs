@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Page</title>
+</head>
+<body>
+
+    <h1>Grocery List</h1>
+
+    <ul>
+        <li> <a href="homepage" target="_blank" rel="noopener">View Homepage</a></li>
+        <li> <a href="semester" target="_blank" rel="noopener">View Semester Details</a></li>
+        <li> <a href="expenses" target="_blank" rel="noopener">View Expenses Details</a></li>
+     </ul>
+
+<h3>Items to buy</h3>
+
+     <table border="line">
+
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+
+        <% for(let i=0; i < grocery.length; i++){%>
+    
+
+            <tr>
+                <td><%= grocery[i].Item %></td>
+                <td><%= grocery[i].Quantity %></td>
+                <td><%= grocery[i].Price %></td>
+            </tr>
+            <% } %>
+        </table>
+
+        <h4>Grocery List App</h4>
+
+
+</body>
+</html>

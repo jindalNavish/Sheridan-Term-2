@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week5</title>
+</head>
+<body>
+    <script>
+        /*Method 1 
+        var person = new Object();
+
+        person.firstname = "John";
+        person.lastname = "Smith";
+        person.age = 50;
+        person.eyecolor = "blue";
+
+        document.write(person.firstname+" is "+person.age+" years old.")*/
+
+
+        //Method 2
+        function person(firstname, lastname, age, eyecolor){
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.age = age;
+            this.eyecolor = eyecolor;
+        }
+        var person1 = new person("john","Smith", 50 ,"blue");
+
+        document.write(person1.firstname+" is "+person1.age+ " years old.");
+
+        //Exercise 1
+        function employee(first, last, age, department){
+            this.first = first;
+            this.last = last;
+            this.age = age;
+            this.department = department;
+        }
+        var employee1 = new employee("navish","jindal",19,"HR")
+        var employee2 = new employee("keshav","sharma",19,"janitor")
+        document.write("<br>"+employee1.first+" " +employee1.last+" is "+employee1.age+ " years old."+" is from "+employee1.department);
+        document.write("<br>"+employee2.first+" "+employee2.last+" is "+employee2.age+ " years old."+" is from "+employee2.department);
+
+        var greet = function(){
+            return "<br>Hello, world!";
+        };
+
+        document.write(greet());
+
+        const diceRoll = function()
+        {
+            var dicename = Math.floor(Math.random()*6)+1;
+            alert("Dice number: "+ dicename);
+        };
+
+        diceRoll();
+
+       function example(){
+        if(true){
+        var x =10;
+        let y = 20;
+        console.log("inside block:x =",x,"y =",y);}
+        console.log("inside block:x = ",x);
+        console.log("inside block:y=",y);}
+        example();
+
+      
+    </script>
+</body>
+</html>

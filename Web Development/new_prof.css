@@ -1,0 +1,74 @@
+body{overflow:scroll;
+background-color: rgb(193, 173, 173);
+width: 960px;
+margin:0 auto;}
+
+#content{overflow: auto;
+  height: 100%;}
+
+#nav, #feature, #footer {margin: 1em;
+padding: 0.6em;
+padding: 0.6em;
+text-align: center;}
+
+#column1, #column2, #column3{
+  width: 300px;
+  float: left;
+  margin: 10px;
+  background-color: #e6dee7;
+  text-align: center;
+}
+
+li{display: inline;
+padding: 0.5em;}
+
+#nav, #footer{
+  background-color: #6d6d04;
+  padding: 0.2em;
+}
+
+#feature {background-color: #efefa0;}
+
+h1{text-align: center;}
+ 
+
+
+  #style{
+    width: 50%;
+    border: .2em solid navy;
+    /* uncomment next line to test border collapse (default is separate) */
+    border-collapse: separate;
+    border-spacing: .3em;
+    font-size: 1.5em;  /* for easier demonstration */
+    background-color: #00ffff;
+  }
+  
+  caption {
+    color: #58ff00;
+    font-weight: bold;
+  }
+  td, th {
+    text-align: center;
+    border: .1em solid green;
+  }
+
+.okeie{overflow: scroll;
+min-width: 100px;
+max-width: 250px;
+text-align: center;
+min-height: 100px;
+max-height: 200px;
+border: 3px solid gray;
+padding: 50px;
+margin: 10px auto 10px auto;
+background-color: #00ffff;}
+
+table{overflow: hidden;
+padding: 50px;
+min-height: 40px;
+max-height: 80px;
+margin: 10px auto 10px auto;
+min-width: 40px;
+max-width: 80px;
+}
+

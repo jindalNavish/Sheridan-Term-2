@@ -1,0 +1,21 @@
+<html>
+<body>
+<h1> Haha2 website </h1>
+<img src="god.jpg" width=250/>
+</body>
+<!--Cross Origin Resource Sharing-->
+<div id="tofetch" />
+<script>
+var tofetch =
+document.getElementById("tofetch");
+var second = 'http://ashito.s3-website-us-east-1.amazonaws.com/';
+fetch(second+'indexaws2.html')
+.then((response) => {
+return response.text();
+})
+.then((html) => {
+tofetch.innerHTML = html;
+document.getElementById('MapleLeafBlue').src="god.jpg";
+});
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week5_2</title>
+</head>
+<body>
+    <div id="first">
+        <h1>Haha</h1>
+    </div>
+    <script>
+        function repo(image, aura){
+            this.image = image;
+            this.aura = aura;
+
+            this.attitude = function(){
+                return "He has an "+this.image+ " image and "+this.aura+ " aura";
+            };
+        }
+            var final = new repo("non-chalant",100000000);
+            document.write(final.attitude());
+        
+            function Hotel(name, location, rooms, bookedRooms){
+                this.name = name;
+                this.location = location;
+                this.rooms = rooms;
+                this.bookedRooms = bookedRooms;
+
+                this.checkAvailability = function(){
+                   return this.rooms - this.bookedRooms;
+                };
+            }
+
+            var hotel = new Hotel("Hiyat","Ludhiana",550,489);
+            document.write("<br>"+" Rooms available are "+hotel.checkAvailability());
+
+ var str = "Hello";
+var myFunc = function()
+{
+var str = "world";
+alert(str);
+};
+myFunc();
+document.write('<p>' + str + '</p>');
+
+document.getElementById("first").style.backgroundColor="blue";
+
+</script>
+</body>
+</html>

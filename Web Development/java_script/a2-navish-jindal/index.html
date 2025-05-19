@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assign2.css">
+    <title>Assigment 2 for Navish Jindal</title>
+</head>
+<body>
+    <!-- Creating change theme button  -->
+    <div id="change">
+        <input id="mode", type="button" , value="Change Theme" onclick="theme()">
+    </div>
+    <div id="intro">
+        <h1>
+            Assignment 2<br> Navish Jindal
+        </h1>
+    </div>
+    <div id="currency">
+        Currency Conversion
+    </div>
+    <!-- Creating all the conversion buttons with an extra p tag at the end for the result to display-->
+     <!--Button to convert Usd to Cad-->
+        <p class="para">
+        <input id="cad1" type="button" value="Usd to Cad" onclick="usdCad();">
+        <input type="number" id="fr1" placeholder="Enter number to convert">
+        <p id="first" class="out"></p>
+        </p>
+         <!--Button to convert Cad to Usd-->
+        <p class="para">
+        <input id="cad2" type="button" value="Cad to Usd" onclick="cadUsd();">
+        <input type="number" id="fr2" placeholder="Enter number to convert">
+        <p id="second" class="out"></p>
+        </p>
+         <!--Button to convert Usd to Franc-->
+        <p class="para">
+        <input id="franc1" type="button" value="Usd to Franc" onclick="usdFranc();">
+        <input type="number" id="fr3" placeholder="Enter number to convert">
+        <p id="third" class="out"></p>
+        </p>
+        <!--Button to convert Franc to Usd-->
+        <p class="para">
+        <input id="franc2" type="button" value="Franc to Usd" onclick="francUsd();">
+        <input type="number" id="fr4" placeholder="Enter number to convert">
+        <p id="fourth" class="out"></p>
+        </p>
+        <!--Button to convert Usd to Euros-->
+        <p class="para">
+        <input id="euros1" type="button" value="Usd to Euros" onclick="usdEuros();">
+        <input type="number" id="fr5" placeholder="Enter number to convert">
+        <p id="fifth" class="out"></p>
+        </p>
+        <!--Button to convert Euros to Usd-->
+        <p class="para">
+        <input id="euros2" type="button" value="Euros to Usd" onclick="eurosUsd();">
+        <input type="number" id="fr6" placeholder="Enter number to convert">
+        <p id="sixth" class="out"></p>
+        </p>
+        <!--Button to convert Usd to Inr-->
+        <p class="para">
+        <input id="inr1" type="button" value="Usd to Inr" onclick="usdInr();">
+        <input type="number" id="fr7" placeholder="Enter number to convert">
+        <p id="seventh" class="out"></p>
+        </p>
+        <!--Button to convert Inr to Usd-->
+        <p class="para">
+        <input id="inr2" type="button" value="Inr to Usd" onclick="inrUsd();">
+        <input type="number" id="fr8" placeholder="Enter number to convert">
+        <p id="eighth" class="out"></p>
+        </p>
+    
+    </form>
+    <script src="Scripts/assign2.js"></script>
+    
+</body>
+</html>

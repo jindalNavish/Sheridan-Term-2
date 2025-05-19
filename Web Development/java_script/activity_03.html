@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .yellow{
+            background-color: yellow;
+            padding: 10%;
+        }
+        .blue{
+            background-color: blue;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <p id="change">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo aspernatur, vitae pariatur eaque eligendi inventore recusandae? Dolor optio ea quas error? Consequuntur voluptate aut recusandae porro, error eum excepturi blanditiis.</p>
+    <button onclick="main();">Change Color</button>
+    <script>
+
+        function main(){
+        var change = document.getElementById('change');
+
+
+        if (change.classList.contains('yellow')){
+            change.classList.remove('yellow');
+            change.classList.add('blue');}
+        else{
+            change.classList.remove('blue');
+            change.classList.add('yellow');
+            }
+        }
+
+
+    </script>
+</body>
+</html>

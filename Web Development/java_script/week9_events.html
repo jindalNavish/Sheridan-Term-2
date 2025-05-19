@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week9_events</title>
+
+</head>
+<body>
+    <label>Enter a number: <input type="text" id="num1"></label><br>
+    <label>Enter a number: <input type="text" id="num2"></label><br>
+    <br><input type="button" value="Finding If Num1 divides Num2 evenly" id="btn"><br>
+    <p id="result"></p>
+    <br>
+    <p id="para">This is the paragraph</p>
+    <script>
+        var p = document.getElementById('para');
+        p.onmouseover = function(){
+            alert("Mouse Over!");
+        };
+        p.onmouseout = function(){
+            alert('Mouse out!');
+        };
+
+        var btn = document.getElementById('btn');
+        var result = document.getElementById('result');
+        btn.onclick = function(){
+            var x = document.getElementById('num1').value;
+            var y = document.getElementById('num2').value;
+            if (y%x === 0){
+                var done = "true";
+                result.innerHTML = "Num 1 divides Num2: "+done;
+            }
+            else{
+                var notDone = "False";
+                result.innerHTML = "Num 1 divides Num2: "+notDone;
+            }
+        }
+
+    </script>
+</body>
+</html>

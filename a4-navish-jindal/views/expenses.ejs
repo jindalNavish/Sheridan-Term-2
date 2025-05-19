@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Page</title>
+</head>
+<body>
+
+<h1>Expense Details</h1>
+
+    <ul>
+        <li> <a href="homepage" target="_blank" rel="noopener">View Homepage</a></li>
+        <li> <a href="grocery" target="_blank" rel="noopener">View Grocery Details</a></li>
+        <li> <a href="semester" target="_blank" rel="noopener">View Semester Details</a></li>
+     </ul>
+
+     <h3>Expenses</h3>
+
+     <table border="line">
+
+        <tr>
+            <th>Expense Item</th>
+            <th>Amount</th>
+        </tr>
+
+        <% for(let i=0; i < expenses.length; i++){%>
+
+            <tr>
+                <td><%= expenses[i].ExpenseItem %></td>
+                <td><%= expenses[i].Amount %></td>
+            </tr>
+            <% } %>
+        </table>
+
+        <h4>Expense Tracker</h4>
+
+
+</body>
+</html>
